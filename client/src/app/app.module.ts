@@ -7,19 +7,20 @@ import { AppRoutingModule } from './app-routing.module';
 
 //  Components
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { CoreModule } from 'src/core/core.module';
+import { ShopModule } from 'src/shop/shop.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavBarComponent
-    
+    AppComponent  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    CoreModule,
+    ShopModule
   ],
   providers: [],
   bootstrap: [AppComponent]
